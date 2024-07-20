@@ -54,8 +54,8 @@ export const PROJECTS = [
 I implemented a collaborative filtering algorithm with Python, Pandas, and Scikit-learn for book recommendations and designed a popularity-based recommendation system. I processed a dataset of over 50K book ratings and built a responsive web application using Flask to provide personalized book suggestions.
       `,
     technologies: ["Python", "NLP", "Flask", "Machine Learning", "Git"],
-    live:``,
-    github: ``,
+    live:`https://github.com/PRIYANSH-2004/Book-Recommender`,
+    github: `https://github.com/PRIYANSH-2004/Book-Recommender`,
   },
   {
     title: "Mail Spam Detection",
@@ -65,8 +65,8 @@ I implemented a collaborative filtering algorithm with Python, Pandas, and Sciki
       I developed a spam detection model using Python, Scikit-learn, and NLTK, achieving 94% accuracy with Multinomial Naive Bayes. I performed data cleaning, label encoding, tokenization, stemming, and count vectorization. Additionally, I created and deployed a user-friendly web app with Streamlit for real-time spam detection
       `,
     technologies: ["Python", "Machine Learning", "NLP", "Stream Lit", "Git"],
-    live:``,
-    github: ``,
+    live:`https://spam-detection-1-r9wb.onrender.com/`,
+    github: `https://github.com/PRIYANSH-2004/spam-detection`,
   },
   {
     title: "Portfolio Website",
@@ -74,8 +74,8 @@ I implemented a collaborative filtering algorithm with Python, Pandas, and Sciki
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind CSS","framer-motion"],
-    live:``,
-    github: ``,
+    live:`https://portfolio-zeta-dun-43.vercel.app/`,
+    github: `https://github.com/PRIYANSH-2004/Portfolio`,
   },
   {
     title: "Snake Game",
@@ -85,8 +85,8 @@ I implemented a collaborative filtering algorithm with Python, Pandas, and Sciki
     I developed a classic Snake game using HTML, CSS, and JavaScript. I implemented game logic, rendering, and user controls to create an engaging gameplay experience. The game features responsive design and smooth animations for an interactive and enjoyable user experience.
     `,
     technologies: ["HTML", "CSS", "JavaScript"],
-    live:``,
-    github: ``,
+    live:`https://snake-game-pearl.vercel.app/`,
+    github: `https://github.com/PRIYANSH-2004/snake_game`,
   },
   {
     title: "Tic Tac Toe Game",
@@ -96,8 +96,8 @@ I implemented a collaborative filtering algorithm with Python, Pandas, and Sciki
 I created a Tic Tac Toe game using HTML, CSS, and JavaScript. I implemented game logic, player turns, and win conditions to ensure a functional and engaging experience. The game features an intuitive interface and smooth interaction for a seamless user experience.
     `,
     technologies: ["HTML", "CSS", "JavaScript"],
-    live:``,
-    github: ``,
+    live:`https://tic-tac-toe-eta-sage.vercel.app/`,
+    github: `https://github.com/PRIYANSH-2004/tic-tac-toe`,
   },
 ];
 

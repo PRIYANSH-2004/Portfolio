@@ -65,7 +65,7 @@ export const PROJECTS = [
       `
 I implemented a collaborative filtering algorithm with Python, Pandas, and Scikit-learn for book recommendations and designed a popularity-based recommendation system. I processed a dataset of over 50K book ratings and built a responsive web application using Flask to provide personalized book suggestions.
       `,
-    technologies: ["Python", "NLP", "Flask", "Machine Learning", "Git"],
+    technologies: ["Python", "NLP", "Machine Learning", "Git"],
     live:`https://github.com/PRIYANSH-2004/Book-Recommender`,
     github: `https://github.com/PRIYANSH-2004/Book-Recommender`,
   },

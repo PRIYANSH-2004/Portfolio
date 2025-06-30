@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/project-6.png";
+import project7 from "../assets/projects/project-7.png";
 
 export const HERO_CONTENT = `
 I am a dedicated learner in machine learning engineering and deep learning, enhancing his expertise in these cutting-edge fields. With a strong foundation in web development, he is proficient in front-end technologies like React and back-end databases such as MySQL and MongoDB. Combining his passion for innovative solutions and robust web applications, Priyansh aims to leverage his diverse skill set to drive business growth and deliver exceptional user experiences.
@@ -47,6 +48,17 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "LC Insight",
+    image: project7,
+    description:
+    `
+ LC Insight is a full-stack web app that visualizes LeetCode user profiles using React (TypeScript) and Express.js. It fetches real-time data via a custom proxy to LeetCode's GraphQL API and displays insights like problem stats, activity trends, and user comparisons. Deployed on Vercel (frontend) and Render (backend).
+    `,
+    technologies: ["React", "Express", "Node" ],
+    live:`https://lc-insight.vercel.app/`,
+    github: `https://github.com/PRIYANSH-2004/LC_Insight`,
+  },
   {
     title: "Sault",
     image: project6,

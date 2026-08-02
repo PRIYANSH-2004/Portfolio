@@ -19,9 +19,6 @@ import {
   SiExpress,
   SiFastapi,
   SiFlask,
-  SiPandas,
-  SiNumpy,
-  SiScikitlearn,
   SiPostgresql,
   SiMongodb,
   SiRedis,
@@ -33,7 +30,7 @@ import {
   SiVercel,
   SiRender,
 } from "react-icons/si";
-import { TbDatabase, TbBrandReactNative, TbChartHistogram } from "react-icons/tb";
+import { TbDatabase, TbBrandReactNative } from "react-icons/tb";
 
 export const HERO_CONTENT = `I'm a full-stack and AI-systems developer, currently building AI-driven infrastructure and business intelligence platforms as a Software Developer at Talendy Holdings, continuing an engagement with Akatsuki AI on Project Synapse. I'm finishing my B.Tech in Computer Science at IIITDM Jabalpur, and I like working across the stack — from React and Next.js on the frontend to FastAPI, Node.js, and cloud infrastructure on GCP underneath. I'm most energized by taking AI capabilities from prototype to production: model deployment, secure APIs, and the data pipelines that hold it all together.`;
 

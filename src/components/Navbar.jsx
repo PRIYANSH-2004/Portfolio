@@ -6,11 +6,12 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { SiLeetcode } from "react-icons/si";
 import {motion, AnimatePresence} from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
 
 const NAV_LINKS = [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
+    // { label: "About", href: "#about" }, // About section temporarily disabled, see App.jsx
     { label: "Experience", href: "#experience" },
+    { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Achievements", href: "#achievements" },
     { label: "Contact", href: "#contact" },
@@ -27,46 +28,52 @@ const Navbar =() => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className='sticky top-0 z-50 -mx-4 mb-12 border-b border-neutral-900/0 bg-neutral-950/70 px-4 py-5 backdrop-blur-md sm:-mx-6 sm:px-6 lg:-mx-8 lg:mb-20 lg:px-8'>
+        <nav className='sticky top-0 z-50 -mx-4 mb-12 border-b border-border/0 bg-canvas/70 px-4 py-5 backdrop-blur-md sm:-mx-6 sm:px-6 lg:-mx-8 lg:mb-20 lg:px-8'>
             <div className='flex items-center justify-between'>
                 <a href='#home' className="flex shrink-0 items-center">
                     <motion.img
                     whileHover={{scale:1.15}}
-                    className='w-9'  src={logo} alt='Priyansh Singh logo'/>
+                    className='w-9 invert dark:invert-0'  src={logo} alt='Priyansh Singh logo'/>
                 </a>
 
-                <div className='hidden items-center gap-6 text-sm text-neutral-400 md:flex'>
+                <div className='hidden items-center gap-6 text-sm text-text-muted md:flex'>
                     {NAV_LINKS.map((link) => (
-                        <a key={link.href} href={link.href} className='transition-colors duration-200 hover:text-white'>
+                        <a key={link.href} href={link.href} className='transition-colors duration-200 hover:text-text'>
                             {link.label}
                         </a>
                     ))}
                 </div>
 
-                <div className='hidden items-center gap-4 text-xl text-neutral-400 md:flex'>
-                    {SOCIALS.map(({icon: Icon, href, label}) => (
-                        <motion.a
-                        key={label}
-                        whileHover={{scale:1.2}}
-                        target='_blank'
-                        rel="noopener noreferrer"
-                        href={href}
-                        aria-label={label}
-                        className='transition-colors duration-200 hover:text-white'
-                        >
-                            <Icon/>
-                        </motion.a>
-                    ))}
+                <div className='hidden items-center gap-4 md:flex'>
+                    <div className='flex items-center gap-4 text-xl text-text-muted'>
+                        {SOCIALS.map(({icon: Icon, href, label}) => (
+                            <motion.a
+                            key={label}
+                            whileHover={{scale:1.2}}
+                            target='_blank'
+                            rel="noopener noreferrer"
+                            href={href}
+                            aria-label={label}
+                            className='transition-colors duration-200 hover:text-text'
+                            >
+                                <Icon/>
+                            </motion.a>
+                        ))}
+                    </div>
+                    <ThemeToggle />
                 </div>
 
-                <button
-                type="button"
-                aria-label={isOpen ? "Close menu" : "Open menu"}
-                onClick={() => setIsOpen((prev) => !prev)}
-                className="text-2xl text-neutral-300 md:hidden"
-                >
-                    {isOpen ? <FaXmark /> : <FaBars />}
-                </button>
+                <div className="flex items-center gap-3 md:hidden">
+                    <ThemeToggle />
+                    <button
+                    type="button"
+                    aria-label={isOpen ? "Close menu" : "Open menu"}
+                    onClick={() => setIsOpen((prev) => !prev)}
+                    className="text-2xl text-text"
+                    >
+                        {isOpen ? <FaXmark /> : <FaBars />}
+                    </button>
+                </div>
             </div>
 
             <AnimatePresence>
@@ -78,7 +85,7 @@ const Navbar =() => {
                     transition={{ duration: 0.25 }}
                     className="overflow-hidden md:hidden"
                     >
-                        <div className="flex flex-col gap-4 pb-2 pt-6 text-neutral-300">
+                        <div className="flex flex-col gap-4 pb-2 pt-6 text-text-muted">
                             {NAV_LINKS.map((link) => (
                                 <a
                                 key={link.href}
@@ -89,9 +96,9 @@ const Navbar =() => {
                                     {link.label}
                                 </a>
                             ))}
-                            <div className="mt-2 flex items-center gap-5 text-xl text-neutral-400">
+                            <div className="mt-2 flex items-center gap-5 text-xl text-text-muted">
                                 {SOCIALS.map(({icon: Icon, href, label}) => (
-                                    <a key={label} target='_blank' rel="noopener noreferrer" href={href} aria-label={label} className='hover:text-white'>
+                                    <a key={label} target='_blank' rel="noopener noreferrer" href={href} aria-label={label} className='hover:text-text'>
                                         <Icon/>
                                     </a>
                                 ))}

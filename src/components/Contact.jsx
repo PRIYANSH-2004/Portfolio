@@ -13,7 +13,7 @@ const Contact = () => {
             initial={{y:-50, opacity:0}}
             viewport={{once:true}}
             transition={{duration:0.5}}
-            className="my-10 text-center text-4xl">
+            className="my-10 text-center text-3xl font-semibold tracking-tight text-text sm:text-4xl">
                 Get in Touch
             </motion.h2>
             <motion.p
@@ -21,7 +21,7 @@ const Contact = () => {
             initial={{opacity:0}}
             viewport={{once:true}}
             transition={{duration:0.5}}
-            className="mx-auto mb-10 max-w-md text-center text-neutral-500">
+            className="mx-auto mb-10 max-w-md text-center text-text-muted">
                 Open to full-time Software Developer roles and interesting collaborations — feel free to reach out.
             </motion.p>
 
@@ -33,10 +33,10 @@ const Contact = () => {
                 transition={{duration:0.5}}
                 className="flex flex-col gap-2"
                 >
-                    <a href="tel:+917355250737" className="text-lg text-neutral-300 transition-colors duration-200 hover:text-white">
+                    <a href="tel:+917355250737" className="text-lg text-text transition-colors duration-200 hover:text-accent">
                         {CONTACT.phoneNo}
                     </a>
-                    <a href={`mailto:${CONTACT.email}`} className="text-lg text-neutral-300 underline decoration-neutral-700 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-cyan-400">
+                    <a href={`mailto:${CONTACT.email}`} className="text-lg text-text underline decoration-border underline-offset-4 transition-colors duration-200 hover:text-accent hover:decoration-accent">
                         {CONTACT.email}
                     </a>
                 </motion.div>
@@ -46,15 +46,15 @@ const Contact = () => {
                 initial={{y:20, opacity:0}}
                 viewport={{once:true}}
                 transition={{duration:0.5, delay:0.1}}
-                className="flex items-center gap-5 text-2xl text-neutral-400"
+                className="flex items-center gap-5 text-2xl text-text-muted"
                 >
-                    <a href="https://linkedin.com/in/priyansh-singh-pr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors duration-200 hover:text-white">
+                    <a href="https://linkedin.com/in/priyansh-singh-pr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors duration-200 hover:text-text">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/PRIYANSH-2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-colors duration-200 hover:text-white">
+                    <a href="https://github.com/PRIYANSH-2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-colors duration-200 hover:text-text">
                         <FaGithub />
                     </a>
-                    <a href="https://leetcode.com/u/PRIYANSH_2004/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" className="transition-colors duration-200 hover:text-white">
+                    <a href="https://leetcode.com/u/PRIYANSH_2004/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" className="transition-colors duration-200 hover:text-text">
                         <SiLeetcode />
                     </a>
                 </motion.div>
@@ -65,10 +65,11 @@ const Contact = () => {
                 viewport={{once:true}}
                 transition={{duration:0.5, delay:0.2}}
                 href="/resume.pdf"
+                download="Priyansh_Singh_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                    <button type="button" className="rounded-lg bg-gradient-to-r from-cyan-400 via-sky-500 to-violet-500 px-6 py-2.5 text-sm font-medium text-white transition-transform duration-200 hover:scale-[1.03]">
+                    <button type="button" className="rounded-lg bg-accent px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:scale-[1.03] hover:bg-accent-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40">
                         Download Resume
                     </button>
                 </motion.a>
